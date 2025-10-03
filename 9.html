@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ffffff;
+      color: #000000;
+      background-image: url(Untitled\ design.png) ;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0rem 5rem;
+      background-size: 90%;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #000000;
+      font-size: 5rem;
+    }
+
+    .student {
+      background: transparent;
+      backdrop-filter: blur(10px);
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    .student p {
+      font-weight: bold;
+      font-size: 18px;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .options {
+      display: flex;
+      gap: 10px;
+      font-size: 25px;
+    }
+
+    .options input {
+      display: none;
+    }
+
+    .options label {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      background: rgb(44, 44, 44, 0.3);
+      cursor: pointer;
+      transition: 0.3s;
+      border: 2px solid transparent;
+    }
+
+    .options input:checked + label {
+      background: #00bcd4;
+      color: black;
+      font-weight: bold;
+      border: 2px solid #0097a7;
+    }
+
+    button {
+      display: block;
+      margin: 40px auto 0 auto;
+      padding: 12px 30px;
+      font-size: 40px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #00bcd4, #0097a7);
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #0097a7, #00bcd4);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Class Attendance</h2>
+  <form id="attendanceForm">
+
+    <!-- Student 1 -->
+    <div class="student">
+      <p>Ali</p>
+      <div class="options">
+        <input type="radio" id="ali-present" name="Ali" value="Present"><label for="ali-present">Present</label>
+        <input type="radio" id="ali-absent" name="Ali" value="Absent"><label for="ali-absent">Absent</label>
+        <input type="radio" id="ali-leave" name="Ali" value="Leave"><label for="ali-leave">Leave</label>
+      </div>
+    </div>
+
+    <!-- Student 2 -->
+    <div class="student">
+      <p>Fatima</p>
+      <div class="options">
+        <input type="radio" id="fatima-present" name="Fatima" value="Present"><label for="fatima-present">Present</label>
+        <input type="radio" id="fatima-absent" name="Fatima" value="Absent"><label for="fatima-absent">Absent</label>
+        <input type="radio" id="fatima-leave" name="Fatima" value="Leave"><label for="fatima-leave">Leave</label>
+      </div>
+    </div>
+
+    <!-- Student 3 -->
+    <div class="student">
+      <p>Ahmed</p>
+      <div class="options">
+        <input type="radio" id="ahmed-present" name="Ahmed" value="Present"><label for="ahmed-present">Present</label>
+        <input type="radio" id="ahmed-absent" name="Ahmed" value="Absent"><label for="ahmed-absent">Absent</label>
+        <input type="radio" id="ahmed-leave" name="Ahmed" value="Leave"><label for="ahmed-leave">Leave</label>
+      </div>
+    </div>
+
+    <!-- Student 4 -->
+    <div class="student">
+      <p>Ayesha</p>
+      <div class="options">
+        <input type="radio" id="ayesha-present" name="Ayesha" value="Present"><label for="ayesha-present">Present</label>
+        <input type="radio" id="ayesha-absent" name="Ayesha" value="Absent"><label for="ayesha-absent">Absent</label>
+        <input type="radio" id="ayesha-leave" name="Ayesha" value="Leave"><label for="ayesha-leave">Leave</label>
+      </div>
+    </div>
+
+    <!-- Student 5 -->
+    <div class="student">
+      <p>Bilal</p>
+      <div class="options">
+        <input type="radio" id="bilal-present" name="Bilal" value="Present"><label for="bilal-present">Present</label>
+        <input type="radio" id="bilal-absent" name="Bilal" value="Absent"><label for="bilal-absent">Absent</label>
+        <input type="radio" id="bilal-leave" name="Bilal" value="Leave"><label for="bilal-leave">Leave</label>
+      </div>
+    </div>
+
+    <!-- Student 6 -->
+    <div class="student">
+      <p>Sara</p>
+      <div class="options">
+        <input type="radio" id="sara-present" name="Sara" value="Present"><label for="sara-present">Present</label>
+        <input type="radio" id="sara-absent" name="Sara" value="Absent"><label for="sara-absent">Absent</label>
+        <input type="radio" id="sara-leave" name="Sara" value="Leave"><label for="sara-leave">Leave</label>
+      </div>
+    </div>
+
+    <!-- Student 7 -->
+    <div class="student">
+      <p>Usman</p>
+      <div class="options">
+        <input type="radio" id="usman-present" name="Usman" value="Present"><label for="usman-present">Present</label>
+        <input type="radio" id="usman-absent" name="Usman" value="Absent"><label for="usman-absent">Absent</label>
+        <input type="radio" id="usman-leave" name="Usman" value="Leave"><label for="usman-leave">Leave</label>
+      </div>
+    </div>
+
+    <!-- Student 8 -->
+    <div class="student">
+      <p>Zara</p>
+      <div class="options">
+        <input type="radio" id="zara-present" name="Zara" value="Present"><label for="zara-present">Present</label>
+        <input type="radio" id="zara-absent" name="Zara" value="Absent"><label for="zara-absent">Absent</label>
+        <input type="radio" id="zara-leave" name="Zara" value="Leave"><label for="zara-leave">Leave</label>
+      </div>
+    </div>
+
+    <!-- Student 9 -->
+    <div class="student">
+      <p>Hassan</p>
+      <div class="options">
+        <input type="radio" id="hassan-present" name="Hassan" value="Present"><label for="hassan-present">Present</label>
+        <input type="radio" id="hassan-absent" name="Hassan" value="Absent"><label for="hassan-absent">Absent</label>
+        <input type="radio" id="hassan-leave" name="Hassan" value="Leave"><label for="hassan-leave">Leave</label>
+      </div>
+    </div>
+
+    <!-- Student 10 -->
+    <div class="student">
+      <p>Noor</p>
+      <div class="options">
+        <input type="radio" id="noor-present" name="Noor" value="Present"><label for="noor-present">Present</label>
+        <input type="radio" id="noor-absent" name="Noor" value="Absent"><label for="noor-absent">Absent</label>
+        <input type="radio" id="noor-leave" name="Noor" value="Leave"><label for="noor-leave">Leave</label>
+      </div>
+    </div>
+
+    <button type="submit">Submit Attendance</button>
+  </form>
+
+  <script>
+    document.getElementById("attendanceForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      const attendanceArray = [];
+
+      formData.forEach((value, key) => {
+        attendanceArray.push({ student: key, status: value });
+      });
+
+      const payload = {
+        class: "Grade 9",
+        date: new Date().toISOString().split("T")[0],
+        attendance: attendanceArray
+      };
+
+      fetch("https://YOUR_N8N_WEBHOOK_URL", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      })
+      .then(res => res.json())
+      .then(data => {
+        alert("Attendance submitted successfully!");
+        console.log("Response:", data);
+      })
+      .catch(err => {
+        alert("Error submitting attendance");
+        console.error(err);
+      });
+    });
+  </script>
+
+</body>
+</html>
