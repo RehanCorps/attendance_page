@@ -211,7 +211,7 @@
         attendance: attendanceArray
       };
 
-      fetch("https://rehnova123.app.n8n.cloud/webhook/attendance", {
+      fetch("https://n8n-usage.app.n8n.cloud/webhook/attendance", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
